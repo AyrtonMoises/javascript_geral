@@ -1,12 +1,11 @@
-# Projeto básico de funcionalidades Typescript
+# Projeto básico de Typescript
 
-### Baixar typescript
+### Instalar typescript
 ``` npm i -g typescript ```
 
-### Criar arquivo de configuracao 
+### Criar arquivo de configuração
 ``` npx tsc --init ```
--no projeto mudamos o rootDir e outDir, versão(target), ativamos o removeComments e experimentalDecorators
-
+- No arquivo foram alterados:rootDir e outDir, versão(target), e habilitado o removeComments e experimentalDecorators
 
 ### Compilar TS para JS
 ``` npx tsc ```
@@ -14,5 +13,5 @@
 ### Compilar em real-time
 ``` npx tsc -w ```
 
-- Basta instalar a extensao live server, e clicar com botao direito no arquivo "index.html" para
-visualizar as alterações no html
+- Basta instalar a extensão Live server e clicar com botão direito no arquivo "index.html" para
+visualizar as alterações no navegador;
