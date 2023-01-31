@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+</head>
+<body>
+    <button id="btn">Clique</button>
+
+    <script>
+        let audioContext = new AudioContext();
+
+        function playFrequency(frequency, duration){
+            let oscillator = audioContext.createOscillator();
+            oscillator.type = 'sine';
+            oscillator.frequency.value = frequency;
+            oscillator.connect(audioContext.destination);
+            oscillator.start();
+
+            setTimeout(() => {
+                oscillator.stop();
+            }, duration * 1000)
+        }
+        document.addEventListener('click', () => {
+            playFrequency(440, 1);
+        })
+        
+    </script>
+
+</body>
+
+</html>
